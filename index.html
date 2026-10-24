@@ -1,0 +1,281 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alex Gabriel Alves dos Santos | Cibersegurança</title>
+<meta name="description" content="Portfólio de Alex Gabriel Alves dos Santos: cibersegurança, análise e desenvolvimento de sistemas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div id="progresso"></div>
+<div id="luz" aria-hidden="true"></div>
+
+<header class="topo">
+  <div class="container">
+    <a class="logo" href="#inicio">alex<b>@</b>sec:~$</a>
+    <button class="theme-toggle" type="button" aria-label="Ativar modo claro">◐</button>
+    <button class="burger" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav aria-label="Principal">
+      <ul class="menu">
+        <li><a href="#lab">Lab</a></li>
+        <li><a href="#simulacao">Simulação</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#quiz">Quiz</a></li>
+        <li><a href="#introducao">Introdução</a></li>
+        <li><a href="#video">Vídeo</a></li>
+        <li><a href="#audio">Áudio</a></li>
+        <li><a href="#imagem">Imagem</a></li>
+        <li><a href="#infografico">Infográfico</a></li>
+        <li><a href="#animacao">Animação</a></li>
+        <li><a href="#musica">Música</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+<!-- ===== 1. HERO ===== -->
+<section class="hero" id="inicio">
+  <canvas id="rede" aria-hidden="true"></canvas>
+  <div class="container">
+    <div>
+      <span class="etiqueta">em transição para cibersegurança</span>
+      <p class="nome">Alex Gabriel Alves dos Santos</p>
+      <h1 aria-label="Cibersegurança"><span><i>CIBER</i></span><span><i>SEGURANÇA</i></span></h1>
+      <h2 class="cargo">ANALISTA E DESENVOLVEDOR DE SISTEMA</h2>
+      <p class="bio">Profissional em transição de carreira, atualmente conectando minha experiência técnica à Tecnologia da Informação e ao meu interesse por Cibersegurança.</p>
+      <div class="hero-acoes">
+        <a class="btn" href="#video">Explorar portfólio <span>→</span></a>
+        <a class="btn-secundario" href="#introducao">Sobre mim <span>↘</span></a>
+      </div>
+      <div class="hero-status" aria-label="Áreas de interesse">
+        <div><strong>01</strong><span>cibersegurança</span></div>
+        <div><strong>02</strong><span>análise de sistemas</span></div>
+        <div><strong>03</strong><span>conscientização</span></div>
+      </div>
+      <div class="hero-live"><span class="live-dot"></span><span>PORTFOLIO STATUS: ONLINE</span><time id="data-atualizacao"></time></div>
+    </div>
+    <div class="palco">
+      <div class="anel"></div>
+      <div class="hud hud-top"><span class="hud-dot"></span>IDENTITY VERIFIED</div>
+      <div class="hud hud-bottom">SEC_PROFILE <b>2026</b></div>
+      <img id="foto" src="assets/images/profile.jpg" alt="Foto de perfil de Alex Gabriel Alves dos Santos" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 500%22%3E%3Crect width=%22400%22 height=%22500%22 fill=%22%23191970%22/%3E%3Ccircle cx=%22200%22 cy=%22160%22 r=%2290%22 fill=%22%23778899%22/%3E%3Crect x=%2270%22 y=%22270%22 width=%22260%22 height=%22170%22 rx=%2220%22 fill=%22%23778899%22/%3E%3C/svg%3E';this.onerror=null;">
+      <span class="chip a">phishing</span><span class="chip b">engenharia_social</span><span class="chip c">segurança.sh</span>
+      <div class="terminal" aria-hidden="true" id="term"></div>
+    </div>
+  </div>
+  <div class="scroll-hint" aria-hidden="true"><span></span> SCROLL TO DISCOVER</div>
+</section>
+
+<section class="cyber-lab" id="lab">
+  <div class="container">
+    <div class="section-kicker">SECURITY LAB / INTERACTIVE EXPERIENCE</div>
+    <div class="lab-grid">
+      <article class="dashboard cartao revelar">
+        <div class="panel-heading"><div><span class="panel-label">LIVE DASHBOARD</span><h2>Central de segurança</h2></div><span class="online-badge"><i></i> ONLINE</span></div>
+        <div class="metrics">
+          <div><strong>98<span>%</span></strong><small>nível de atenção</small><div class="meter"><i style="width:98%"></i></div></div>
+          <div><strong>04</strong><small>áreas de foco</small><div class="meter"><i style="width:72%"></i></div></div>
+          <div><strong>24/7</strong><small>aprendizado contínuo</small><div class="meter"><i style="width:86%"></i></div></div>
+        </div>
+        <div class="profile-data"><span>STATUS <b>Em transição para cibersegurança</b></span><span>FOCO <b>Proteção de pessoas e sistemas</b></span><span>ATUALIZAÇÃO <b id="dashboard-clock">agora</b></span></div>
+      </article>
+      <article class="terminal-lab cartao revelar atraso">
+        <div class="terminal-title"><span><i></i><i></i><i></i></span> interactive_terminal</div>
+        <div class="terminal-output" id="terminal-output" aria-live="polite"><p><b>alex@sec:~$</b> digite <em>help</em> para começar</p></div>
+        <form class="terminal-form" id="terminal-form"><label for="terminal-input">></label><input id="terminal-input" autocomplete="off" aria-label="Comando do terminal" placeholder="help, about, skills..."></form>
+      </article>
+    </div>
+    <div class="skills-panel cartao revelar">
+      <div class="panel-heading"><div><span class="panel-label">CAPABILITY MAP</span><h2>Mapa de habilidades</h2></div><span class="signal">◈ conexões ativas</span></div>
+      <div class="skill-map">
+        <button class="skill-node main-node" data-skill="ciber">CIBER<br>SEGURANÇA</button>
+        <button class="skill-node node-a" data-skill="phishing">PHISHING</button>
+        <button class="skill-node node-b" data-skill="systems">SISTEMAS</button>
+        <button class="skill-node node-c" data-skill="dev">DESENVOLVIMENTO</button>
+        <button class="skill-node node-d" data-skill="awareness">CONSCIENTIZAÇÃO</button>
+        <svg class="skill-lines" viewBox="0 0 800 280" aria-hidden="true"><path d="M400 140L150 55M400 140L650 55M400 140L150 225M400 140L650 225"/></svg>
+      </div>
+      <p class="skill-description" id="skill-description">Selecione um núcleo para explorar a conexão.</p>
+    </div>
+  </div>
+</section>
+
+<section class="phishing-check" id="simulacao">
+  <div class="container">
+    <div class="section-kicker">THREAT AWARENESS / SIMULATION</div>
+    <div class="simulation-grid">
+      <div class="simulation-copy revelar"><h2>Você cairia nessa mensagem?</h2><p class="lead">Analise o alerta como faria no dia a dia. Escolha uma ação e descubra quais sinais revelam a tentativa de golpe.</p><span class="simulation-counter">SIMULAÇÃO 01 / 01</span></div>
+      <article class="message-card cartao revelar atraso"><div class="message-top"><span class="message-avatar">B</span><div><strong>Banco Seguro</strong><small>agora · mensagem recebida</small></div><span class="danger-tag">ALERTA</span></div><p>Detectamos uma atividade incomum. Sua conta será bloqueada em <b>24 horas</b>. Confirme seus dados imediatamente:</p><div class="fake-link">banco-seguro.falso/login</div><div class="simulation-actions"><button type="button" data-answer="safe">Verificar pelo canal oficial</button><button type="button" data-answer="unsafe">Acessar o link</button></div><p class="simulation-result" id="simulation-result" aria-live="polite"></p></article>
+    </div>
+  </div>
+</section>
+
+<section id="projetos">
+  <div class="container">
+    <div class="section-kicker">BUILD LOG / SELECTED WORK</div>
+    <h2 class="revelar">Projetos em destaque</h2>
+    <p class="lead revelar">Experiências que conectam desenvolvimento, comunicação e segurança digital.</p>
+    <div class="projects-grid">
+      <article class="project-card cartao revelar"><span class="project-number">01 / EDUCATION</span><h3>Phishing e engenharia social</h3><p>Portfólio educativo para explicar golpes digitais de forma visual, acessível e interativa.</p><ul><li>HTML</li><li>CSS</li><li>JavaScript</li></ul><a href="#simulacao">ver experiência →</a></article>
+      <article class="project-card cartao revelar atraso"><span class="project-number">02 / AWARENESS</span><h3>Simulador de decisões</h3><p>Interface que transforma uma mensagem suspeita em uma atividade prática de conscientização.</p><ul><li>UX interativo</li><li>Feedback</li><li>Segurança</li></ul><a href="#simulacao">testar agora →</a></article>
+      <article class="project-card cartao revelar"><span class="project-number">03 / NEXT BUILD</span><h3>Próximo projeto</h3><p>Espaço reservado para documentar uma nova solução e acompanhar minha evolução profissional.</p><ul><li>Pesquisa</li><li>Análise</li><li>Proteção</li></ul><a href="#musica">conhecer mais →</a></article>
+    </div>
+  </div>
+</section>
+
+<section id="quiz" class="quiz-section">
+  <div class="container">
+    <div class="section-kicker">SECURITY AWARENESS / QUIZ</div>
+    <div class="quiz-grid">
+      <div class="revelar"><h2>Teste seu olhar digital</h2><p class="lead">Responda três perguntas rápidas e descubra seu nível de atenção contra golpes.</p><div class="quiz-score"><strong id="quiz-score">0</strong><span>pontos</span><div class="quiz-progress"><i id="quiz-progress"></i></div></div></div>
+      <article class="quiz-card cartao revelar atraso"><span class="quiz-step" id="quiz-step">PERGUNTA 01 / 03</span><h3 id="quiz-question">Qual é a atitude mais segura ao receber uma mensagem urgente do banco?</h3><div class="quiz-options" id="quiz-options"><button type="button" data-correct="true">Abrir o aplicativo oficial e conferir</button><button type="button">Clicar no link para evitar o bloqueio</button><button type="button">Responder enviando meus dados</button></div><p class="quiz-feedback" id="quiz-feedback" aria-live="polite"></p></article>
+    </div>
+  </div>
+</section>
+
+<section id="ferramentas">
+  <div class="container">
+    <div class="section-kicker">SECURITY TOOLS / LOCAL ONLY</div>
+    <div class="tools-grid">
+      <article class="password-tool cartao revelar"><div class="panel-heading"><div><span class="panel-label">PASSWORD GENERATOR</span><h2>Gerador de senha</h2></div><span class="signal">offline / seguro</span></div><div class="password-output"><output id="password-output">Clique em gerar</output><button type="button" id="copy-password" aria-label="Copiar senha">⧉</button></div><label class="range-label" for="password-length">Tamanho <output id="password-length-value">16</output></label><input id="password-length" type="range" min="8" max="32" value="16"><div class="password-options"><label><input type="checkbox" id="include-symbols" checked> símbolos</label><label><input type="checkbox" id="include-numbers" checked> números</label></div><button class="btn" type="button" id="generate-password">Gerar senha <span>↻</span></button><p class="strength" id="password-strength">Escolha uma combinação forte e exclusiva.</p></article>
+      <article class="cartao tool-note revelar atraso"><span class="panel-label">SECURITY PRINCIPLE</span><h2>Pequenos hábitos, grande impacto.</h2><p>Uma senha forte é única, longa e nunca deve ser reutilizada em serviços diferentes.</p><div class="tool-stat"><strong>01</strong><span>não reutilize senhas</span></div><div class="tool-stat"><strong>02</strong><span>ative autenticação em dois fatores</span></div><div class="tool-stat"><strong>03</strong><span>confirme o canal antes de clicar</span></div></article>
+    </div>
+  </div>
+</section>
+
+<div class="faixa" aria-hidden="true"><div id="faixa"></div></div>
+
+<!-- ===== 2. INTRODUÇÃO ===== -->
+<section id="introducao">
+  <div class="container">
+    <h2 class="revelar">Introdução</h2>
+    <p class="lead revelar">Uma visão prática sobre tecnologia, segurança digital e comunicação clara para reduzir riscos.</p>
+    <div class="intro-grade">
+      <article class="cartao revelar">
+        <h3>Sobre mim</h3>
+        <p>Sou Alex Gabriel Alves dos Santos, analista e desenvolvedor de sistema. Estou em transição de carreira e uso minha experiência técnica como ponte para a área de Cibersegurança.</p>
+        <p>Meu objetivo é atuar na proteção de pessoas e sistemas, unindo o olhar de quem constrói software ao de quem identifica riscos. <!-- Edite este texto com suas experiências e objetivos --></p>
+        <ul class="tags"><li>Cibersegurança</li><li>Análise de sistemas</li><li>Desenvolvimento</li><li>Conscientização digital</li></ul>
+      </article>
+      <article class="cartao revelar atraso">
+        <h3>Phishing e engenharia social: como não cair no golpe</h3>
+        <p>Phishing é a fraude em que criminosos se passam por empresas, bancos ou pessoas conhecidas para roubar senhas, dados e dinheiro, geralmente por e-mail, SMS, WhatsApp ou redes sociais.</p>
+        <p>A engenharia social é a técnica por trás desses golpes: em vez de invadir sistemas, o golpista manipula pessoas, explorando confiança, urgência, medo ou curiosidade.</p>
+        <p>Neste portfólio, mostro como reconhecer os sinais de alerta e quais hábitos simples protegem você no dia a dia. Todo o conteúdo foi criado com ferramentas de IA generativa, com revisão humana.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 3. VÍDEO ===== -->
+<section id="video">
+  <div class="container">
+    <h2 class="revelar">Vídeo</h2>
+    <p class="lead revelar">Uma experiência audiovisual para entender como a urgência e a manipulação aparecem nos golpes digitais.</p>
+    <div class="moldura revelar">
+      <iframe src="pages/phishing-video.html" title="Vídeo de conscientização sobre phishing e engenharia social" loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 4. ÁUDIO ===== -->
+<section id="audio">
+  <div class="container">
+    <h2 class="revelar">Áudio</h2>
+    <div class="cartao audio-cartao revelar">
+      <div class="icone-audio" aria-hidden="true">🎧</div>
+      <div>
+        <h3>Título do áudio</h3>
+        <p class="audio-description">Trilha instrumental criada para acompanhar a atmosfera tecnológica deste projeto.</p>
+        <audio controls preload="none">
+          <source src="assets/audio/digital-alert-instrumental.wav" type="audio/wav">
+          Seu navegador não suporta áudio HTML5.
+        </audio>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 5. IMAGEM ===== -->
+<section id="imagem">
+  <div class="container">
+    <h2 class="revelar">Imagem em destaque</h2>
+    <p class="lead revelar">Uma síntese visual dos sinais que ajudam a identificar mensagens suspeitas antes de clicar.</p>
+    <figure class="destaque revelar" tabindex="0">
+      <img src="assets/images/phishing-featured.png" alt="Ilustração sobre phishing e engenharia social" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1200 600%22%3E%3Crect width=%221200%22 height=%22600%22 fill=%22%23191970%22/%3E%3Ccircle cx=%22400%22 cy=%22250%22 r=%22110%22 fill=%22%23778899%22/%3E%3Crect x=%22550%22 y=%22160%22 width=%22340%22 height=%22180%22 rx=%2222%22 fill=%22%23778899%22/%3E%3C/svg%3E';this.onerror=null;">
+      <figcaption>Phishing e engenharia social: como reconhecer os sinais de alerta.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ===== 6. INFOGRÁFICO ===== -->
+<section id="infografico">
+  <div class="container">
+    <h2 class="revelar">Infográfico</h2>
+    <p class="lead revelar">Consulte os principais gatilhos usados por golpistas e os hábitos que fortalecem sua proteção.</p>
+    <div class="info-bloco revelar">
+      <div class="info-rolagem" tabindex="0" aria-label="Infográfico, role para o lado em telas pequenas">
+        <img src="assets/images/phishing-infographic.png" alt="Infográfico sobre phishing e engenharia social" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1200 700%22%3E%3Crect width=%221200%22 height=%22700%22 fill=%22%230d0d1e%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23e8ecf3%22 font-size=%2248%22 font-family=%22Arial%22%3EInfográfico indisponível%3C/text%3E%3C/svg%3E';this.onerror=null;">
+      </div>
+      <p class="dica">Arraste para o lado para ver o infográfico completo.</p>
+      <a class="info-link" href="assets/images/phishing-infographic.png" target="_blank" rel="noopener">abrir em tamanho real</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 7. ANIMAÇÃO ===== -->
+<section id="animacao">
+  <div class="container anim-grade">
+    <div class="revelar">
+      <h2>Animação</h2>
+      <p class="lead animacao-descricao">Dicas rápidas, apresentadas em movimento, para transformar atenção em segurança.</p>
+    </div>
+    <div class="moldura revelar atraso">
+      <img src="assets/images/phishing-protection.gif" alt="Animação sobre proteção contra phishing" loading="lazy" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1200 675%22%3E%3Crect width=%221200%22 height=%22675%22 fill=%22%230d0d1e%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23e8ecf3%22 font-size=%2248%22 font-family=%22Arial%22%3EAnimação indisponível%3C/text%3E%3C/svg%3E';this.onerror=null;">
+    </div>
+  </div>
+</section>
+
+<!-- ===== 8. MÚSICA ===== -->
+<section id="musica">
+  <div class="container">
+    <div class="musica-cartao revelar">
+      <div class="disco" id="disco" aria-hidden="true"></div>
+      <div>
+        <h2>Música</h2>
+        <p>Uma camada sonora para explorar o portfólio com foco e ritmo.</p>
+        <div class="ondas" id="ondas" aria-hidden="true"><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b></div>
+        <audio id="player" controls preload="none">
+          <source src="assets/audio/digital-alert-instrumental.wav" type="audio/wav">
+          Seu navegador não suporta áudio HTML5.
+        </audio>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ===== 9. RODAPÉ ===== -->
+<footer>
+  <div class="container">
+    <p class="nome">Alex Gabriel Alves dos Santos</p>
+    <p class="frase">Segurança começa com informação e bons hábitos.</p>
+    <ul class="redes">
+      <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+      <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube</a></li>
+      <li><a href="mailto:alex@email.com">E-mail</a></li>
+    </ul>
+    <p class="copy">&copy; <span id="ano">2026</span> Alex Gabriel Alves dos Santos. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
