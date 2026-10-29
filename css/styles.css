@@ -126,6 +126,16 @@ h2::before{content:"// ";color:var(--ciano);text-shadow:0 0 18px var(--ciano)}
 .cartao h3{font-size:1.4rem;margin-bottom:.9rem}
 .cartao p+p{margin-top:.8rem}
 .intro-grade{display:grid;grid-template-columns:1fr 1fr;gap:1.6rem}
+.formacao-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.2rem;margin-top:1.4rem}
+.formacao-card{display:grid;grid-template-columns:132px 1fr;gap:1.4rem;align-items:center;min-height:196px}
+.formacao-logo{height:112px;display:grid;place-items:center;padding:.7rem;border-radius:14px;background:#fff;border:1px solid rgba(169,184,255,.25);overflow:hidden}
+.formacao-logo img{width:100%;height:100%;object-fit:contain}
+.formacao-info h3{font-size:1.18rem;margin:.5rem 0 .45rem}
+.formacao-info p{color:var(--ardosia);font-size:.92rem;line-height:1.45}
+.formacao-info time{display:block;margin-top:.7rem;color:var(--brilho);font:500 .72rem var(--f-mono);letter-spacing:.04em}
+.formacao-status{display:inline-block;border-radius:99px;padding:.25rem .55rem;font:500 .6rem var(--f-mono);letter-spacing:.08em;text-transform:uppercase}
+.formacao-status.concluido{color:#7dffb2;border:1px solid rgba(125,255,178,.32);background:rgba(125,255,178,.08)}
+.formacao-status.cursando{color:var(--ciano);border:1px solid rgba(56,232,255,.32);background:rgba(56,232,255,.08)}
 .tags{display:flex;flex-wrap:wrap;gap:.5rem;list-style:none;margin-top:1.3rem}
 .tags li{padding:.3rem .9rem;border:1px solid var(--linha);border-radius:6px;font-family:var(--f-mono);font-size:.8rem;color:var(--brilho);transition:all .25s}
 .tags li:hover{background:var(--azul);border-color:var(--azul-vivo);transform:translateY(-3px)}
@@ -228,7 +238,7 @@ footer .frase{color:var(--ardosia);margin:.5rem 0 2rem}
   .menu{position:absolute;top:72px;left:0;right:0;flex-direction:column;gap:0;border:0;border-radius:0;background:rgba(20,20,27,.97);border-bottom:1px solid var(--linha);max-height:0;overflow:hidden;transition:max-height .4s}
   .menu.aberto{max-height:520px}
   .menu a{padding:.9rem 1.25rem;border-radius:0}
-  .hero .container,.intro-grade,.anim-grade,.musica-cartao,.audio-cartao,.lab-grid,.simulation-grid,.quiz-grid,.tools-grid{grid-template-columns:1fr}
+  .hero .container,.intro-grade,.formacao-grid,.anim-grade,.musica-cartao,.audio-cartao,.lab-grid,.simulation-grid,.quiz-grid,.tools-grid{grid-template-columns:1fr}
   .projects-grid{grid-template-columns:1fr 1fr}
   .hero .container{text-align:center}.hero p.bio{margin-inline:auto;text-align:left}
   .hero-acoes{justify-content:center}
@@ -264,6 +274,9 @@ footer .frase{color:var(--ardosia);margin:.5rem 0 2rem}
   .chip{font-size:.68rem;padding:.3rem .55rem}
   .chip.a{left:-18%}.chip.b{right:-20%}.chip.c{left:-14%}
   .cartao,.info-bloco{padding:1.35rem}
+  .formacao-card{grid-template-columns:92px 1fr;gap:1rem;min-height:0}
+  .formacao-logo{height:86px;padding:.5rem}
+  .formacao-info h3{font-size:1.02rem}
   .audio-cartao,.musica-cartao{padding:1.4rem}
   .redes a{width:100%}
   .metrics{gap:.55rem}.metrics small{font-size:.55rem}.profile-data span{display:block}.profile-data b{display:block;text-align:left;margin-top:.15rem}.skill-map{height:245px}.node-a{left:0}.node-b{right:0}.node-c{left:0}.node-d{right:0}.skill-node{font-size:.55rem;padding:.55rem .65rem}.simulation-actions button{width:100%}
